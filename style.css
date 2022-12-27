@@ -89,14 +89,14 @@ body {
   font-weight: 400;
   margin-bottom: 2rem;
 }
-.subscription button {
-  cursor: pointer;
-  border: none;
+.subscription .btn {
+  display: block;
+  text-decoration: none;
+  text-align: center;
   background-color: var(--Bright-Yellow);
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
-  width: 100%;
   padding: 1.4rem;
   border-radius: 0.5rem;
   box-shadow: 0 1.4rem 2.4rem rgba(34, 41, 4, 0.166);
