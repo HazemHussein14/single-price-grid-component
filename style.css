@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+:root {
+  --Cyan: #2ab2af;
+  --Bright-Yellow: #c0df34;
+  --Light-Gray: #e5eff5;
+  --Grayish-Blue: #98a6bd;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--Light-Gray);
+}
+/*************************************/
+/********* GENARAL RULES *******/
+/*************************************/
+.container {
+  max-width: 65rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 2.4rem 4.2rem rgba(13, 15, 2, 0.166);
+  border-radius: 0.9rem;
+}
+.container section {
+  padding: 4.2rem;
+}
+/*************************************/
+/********* MAIN SECTION *******/
+/*************************************/
+.main-section {
+  background-color: #fff;
+  grid-column: 1 / -1;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+}
+.main-heading {
+  font-size: 3.2rem;
+  color: var(--Cyan);
+  margin-bottom: 1.8rem;
+}
+.money-back {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Bright-Yellow);
+  margin-bottom: 1.8rem;
+}
+.description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--Grayish-Blue);
+}
+/*************************************/
+/******* SUBSCRIPTION SECTION *******/
+/*************************************/
+.subscription {
+  background-color: var(--Cyan);
+  color: #fff;
+  border-bottom-left-radius: 0.9rem;
+}
+.subscription h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.price {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+.duration {
+  font-size: 1.6rem;
+  opacity: 0.3;
+}
+.feature {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.subscription button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--Bright-Yellow);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 100%;
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.4rem 2.4rem rgba(34, 41, 4, 0.166);
+}
+.reason {
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+/*************************************/
+/******* WHY US SECTION *******/
+/*************************************/
+.why-us {
+  background-color: rgba(39, 192, 189, 0.89);
+  color: #fff;
+  border-bottom-right-radius: 0.9rem;
+}
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.reasons {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (max-width: 40.6em) {
+  html {
+    font-size: 56.25%;
+  }
+  body {
+    padding: 1rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .subscription {
+    border-radius: 0;
+  }
+  .why-us {
+    border-bottom-right-radius: 0.9rem;
+    border-bottom-left-radius: 0.9rem;
+  }
+}
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--Cyan);
+}
+
+.attribution a {
+  color: green;
+  text-decoration: none;
+}
